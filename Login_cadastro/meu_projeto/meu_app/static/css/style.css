@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+              0 10px 10px rgba(0,0,0,0.22);
+  position: relative;
+  overflow: hidden;
+  width: 900px;
+  max-width: 100%;
+  min-height: 600px;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+
+.container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+}
+
+form {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+label {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"] {
+  background-color: #E6E6FA;
+  color: #333;
+  border: 2px solid #D1C4E9;
+  padding: 8px 12px;  /* Menor padding */
+  margin: 8px 0;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+  font-size: 14px;  /* Fonte menor */
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #333;
+}
+
+input:focus {
+  outline: none;
+  background-color: #E6E6FA;
+  border: 2px solid #D1C4E9;
+  box-shadow: 0 0 5px #D1C4E9;
+}
+
+button {
+  background: linear-gradient(to right, #E6E6FA, #D1C4E9);
+  color: #333;
+  border: none;
+  padding: 10px 25px;  /* Menor padding */
+  font-size: 14px;  /* Fonte menor */
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #D1C4E9, #E6E6FA);
+  transform: translateY(-2px);
+}
+
+button.ghost {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 35px;  /* Menor padding */
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+button.ghost:hover {
+  background-color: rgba(230, 230, 250, 0.15);
+  transform: scale(1.05);
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+.overlay {
+  background: linear-gradient(to right, #E6E6FA, #D1C4E9);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+  transform: translateX(-20%);
+  left: 0;
+}
+
+.container.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+
+/* LOGO NA FAIXA */
+.logo-overlay {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.logo-overlay img {
+  width: 160px;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+}
+
+/* Espaçamento da tela de cadastro */
+.sign-up-container form {
+  gap: 15px;
+}
+
+.logo-animated {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.logo-animated img {
+  width: 180px;
+  height: auto;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+}

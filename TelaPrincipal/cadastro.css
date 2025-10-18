@@ -12,60 +12,68 @@ body {
 
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 60px;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+  font-weight: bold;
+  font-size: 20px;
+  color: #0b2fcc;
 }
 
-.psi {
-    color: #5076b8;
+.logo span {
+  color: #5eb47c; /* Verde do "Conecta" */
 }
-
-.conecta {
-    color: #78b86b;
+/* Agrupamento do menu e botões */
+.menu-area {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaço entre nav e buttons, pode ajustar para mais ou menos */
 }
 
 nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
 }
 
-nav a:hover {
-    color: #5076b8;
+.buttons {
+  display: flex;
+  gap: 10px;
 }
 
-.botoes button {
-    margin-left: 10px;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
+/* Botões */
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
 }
 
 .btn-entrar {
-    background-color: #78b86b;
-    color: white;
+  background: #fff;
+  border: 1px solid #0b2fcc;
+  color: #0b2fcc;
 }
 
 .btn-cadastrar {
-    background-color: #5dc460;
-    color: white;
+  background: #5eb47c;
+  color: #fff;
 }
 
-.btn-entrar:hover,
-.btn-cadastrar:hover {
-    opacity: 0.9;
+.hero {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: left;
 }
 
 /* Formulário central */

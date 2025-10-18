@@ -55,8 +55,8 @@ nav a {
 
 .btn-entrar {
   background: #fff;
-  border: 1px solid #5eb47c;
-  color: #5eb47c;
+  border: 1px solid #0b2fcc;
+  color: #0b2fcc;
 }
 
 .btn-cadastrar {
@@ -67,7 +67,7 @@ nav a {
 /* Hero com imagem */
 .hero {
   position: relative;
-  background: url('tipos-de-psicologos.jpg') center/cover no-repeat;
+  background: url('Tela\ home.png') center/cover no-repeat;
   height: 500px;
   display: flex;
   align-items: center;

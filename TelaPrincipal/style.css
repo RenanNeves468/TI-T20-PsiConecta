@@ -34,7 +34,7 @@ header {
 .logo {
   font-weight: bold;
   font-size: 20px;
-  color: #333;
+  color: #0b2fcc;
 }
 
 .logo span {
@@ -71,8 +71,8 @@ nav a {
 
 .btn-entrar {
   background: #fff;
-  border: 1px solid #5eb47c;
-  color: #5eb47c;
+  border: 1px solid #0b2fcc;
+  color: #0b2fcc;
 }
 
 .btn-cadastrar {

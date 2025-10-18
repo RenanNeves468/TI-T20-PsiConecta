@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, #e8f2f5, #cce6f6);
+    height: 100vh;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.psi {
+    color: #5076b8;
+}
+
+.conecta {
+    color: #78b86b;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #5076b8;
+}
+
+.botoes button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-entrar {
+    background-color: #78b86b;
+    color: white;
+}
+
+.btn-cadastrar {
+    background-color: #5dc460;
+    color: white;
+}
+
+.btn-entrar:hover,
+.btn-cadastrar:hover {
+    opacity: 0.9;
+}
+
+/* Formulário central */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+.form-container {
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 320px;
+}
+
+.logo-form {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.btn-form {
+    background-color: #2b3a67;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-form:hover {
+    background-color: #1d2a52;
+}
+
+.login-link {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.login-link a {
+    color: #2b3a67;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

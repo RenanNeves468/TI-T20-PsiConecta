@@ -1,0 +1,188 @@
+.footer-content {
+  background: #f5f5f5;
+  color: #333;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 0;
+  z-index: 100;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  /*background: linear-gradient(to bottom right, #f8fcff, #eaf7f3);*/
+  background: url('fundo-de-papel-de-parede-colorido-embacado-artistico.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Cabeçalho */
+header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+.logo span {
+  color: #5eb47c; /* Verde do "Conecta" */
+}
+/* Agrupamento do menu e botões */
+.menu-area {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaço entre nav e buttons, pode ajustar para mais ou menos */
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Botões */
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-entrar {
+  background: #fff;
+  border: 1px solid #5eb47c;
+  color: #5eb47c;
+}
+
+.btn-cadastrar {
+  background: #5eb47c;
+  color: #fff;
+}
+
+.hero {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Destaque do título */
+.hero h2 {
+  display: inline-block;
+  background: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.btn-hero {
+  display: inline-block;
+  background: #5eb47c;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Seção psicólogos */
+.psicologos {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.psicologos h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.grid-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card */
+.card-psicologo {
+  background: #eef3f8;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+}
+
+.tags {
+  margin: 10px 0;
+}
+
+.tags span {
+  display: inline-block;
+  background: #d9d9d9;
+  padding: 5px 10px;
+  margin: 3px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.sobre {
+  background: #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.btn-consulta {
+  display: inline-block;
+  background: #28a745;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+}
